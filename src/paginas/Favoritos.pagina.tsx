@@ -20,7 +20,6 @@ const Favorites = () => {
     dispatch(fetchFavoriteCharacters());
   }, [dispatch]);
 
-  // Check that only favorites are rendered
   const filteredCharacters = favoriteCharacters.characters.filter((character) =>
     favoriteCharacters.list.includes(character.id)
   );

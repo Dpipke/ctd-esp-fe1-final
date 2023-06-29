@@ -1,16 +1,3 @@
-// import { createStore } from 'redux';
-
-// const rootReducer = (state = {}, action: any) => {
-//   return state;
-// };
-
-// const initialState = {};
-
-
-// const store = createStore(rootReducer, initialState);
-
-// export default store;
-
 import personajesReducer from "../reducers/personajesReducer";
 import favoritosReducer from "../reducers/favoritosReducer";
 
@@ -22,11 +9,9 @@ const store = configureStore({
     personajes: personajesReducer,
     favorites: favoritosReducer,
 
-    //agregar el reducer de personajesFavoritos
   }
 });
 
-//Hooks
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 export const useAppDispatch: () => AppDispatch = useDispatch;
