@@ -9,6 +9,7 @@ import './paginacion.css';
  * @returns un JSX element 
  */
 const Paginacion = () => {
+    
 
     return <div className="paginacion">
         <button disabled={true} className={"primary"}>Anterior</button>
